@@ -1,0 +1,32 @@
+{
+  "name": "leadsretrieval",
+  "version": "1.0.0",
+  "description": "Facebook leads retrieval app.",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "axios": "^0.22.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.6.5",
+    "ngrok": "^4.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Inzy07/leadsRetrieval.git"
+  },
+  "author": "Inzamam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Inzy07/leadsRetrieval/issues"
+  },
+  "homepage": "https://github.com/Inzy07/leadsRetrieval#readme",
+  "keywords": [
+    "Leads",
+    "Retrieval"
+  ]
+}
