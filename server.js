@@ -3,7 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 const nodemailer = require("nodemailer");
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Enter the Page Access Token from the previous step
 const FACEBOOK_PAGE_ACCESS_TOKEN = 'EAAZAdI5IqWlkBABzq5w0NlfvDhGj87KMp6ebQKlUXVryuVoerAAv8y3onNzf6P1ZBVWzDC2GmMBW0Dp17AVvqBkgrFvD9TL7ZAdejQ1NU5gQEzwC0bmG2gmZAcw8puS2cslDHPHAA0rfAEZAeJqJ7gV8R2JjPu6FEu96RWmbTxfoaZCQ2ZBTmqg';
