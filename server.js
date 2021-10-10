@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const app = express();
 const nodemailer = require("nodemailer");
 const port = process.env.PORT || 3000;
+var opn = require('opn');
 
 // Enter the Page Access Token from the previous step
 const FACEBOOK_PAGE_ACCESS_TOKEN = 'EAAZAdI5IqWlkBABzq5w0NlfvDhGj87KMp6ebQKlUXVryuVoerAAv8y3onNzf6P1ZBVWzDC2GmMBW0Dp17AVvqBkgrFvD9TL7ZAdejQ1NU5gQEzwC0bmG2gmZAcw8puS2cslDHPHAA0rfAEZAeJqJ7gV8R2JjPu6FEu96RWmbTxfoaZCQ2ZBTmqg';
@@ -77,7 +78,7 @@ async function processNewLead(leadId) {
     }
     // Implode into string with newlines in between fields
     const leadInfo = leadForm.join('\n');
-
+    opn('http://google.com');
     // Log to console
     console.log('A new lead was received!\n', leadInfo);
 
@@ -96,8 +97,8 @@ async function processNewLead(leadId) {
     // create reusable transporter object using the default SMTP transport
     var smtpConfig = {
         host: 'smtp.gmail.com',
-        port: 587,
-        secure: false, // use SSL
+        port: 465,
+        secure: true, // use SSL
         auth: {
             user: 'inzamam@famproperties.com',
             pass: 'Allahis0001!'
